@@ -1,35 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agustin Carretto</title>
+    <title>Mi Portfolio - Estructura Básica</title>
+    <link rel="stylesheet" href="">
 </head>
 <body>
-    
-    
-    <h1 style="color: blue; font-size: 100px;">Hola</h1>
-    
-    
-    <p>Lorem ipsum dolor, sit amet
-    <br>
-        
-        <br>
-        
-        consectetur adipisicing <b> elit </b>. Quis nesciunt earum id <s> quam numquam dolores </s> recusan
-        
-        
-        dae rerum autem velit a. Labore beatae itaque exercitationem perferendis ab rerum fugiat sequi
-    </p>
 
-    <hr>
+    <header class="navbar">
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
 
+    <main>
+        <section id="inicio" class="seccion color-1">
+            <h1>Hola, soy Agustín</h1>
+            <p>Bienvenidos a mi primer sitio web.</p>
+        </section>
 
-<a href="https://uy.linkedin.com/">mi linkedin</a>
+        <section id="sobre-mi" class="seccion color-2">
+            <h2>Sobre mí</h2>
+            <p>Me gusta el básquet, el mate y programar.</p>
+        </section>
 
+        <section id="proyectos" class="seccion color-3">
+            <h2>Mis Proyectos</h2>
+            <div class="contenedor-proyectos">
+                <div class="tarjeta">Proyecto 1</div>
+                <div class="tarjeta">Proyecto 2</div>
+                <div class="tarjeta">Proyecto 3</div>
+            </div>
+        </section>
 
-
-
+        <section id="contacto" class="seccion color-4">
+            <h2>Contacto</h2>
+            <p>¡Mandame un mensaje!</p>
+        </section>
+    </main>
 
 </body>
 </html>
