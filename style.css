@@ -1,3 +1,66 @@
-.body{
-    background-color: aqua;
+/* 1. SCROLL SUAVE: Para que la página deslice al clickear el menú */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 2. RESET: Quitamos espacios que el navegador trae por defecto */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* 3. MENÚ: Simple y siempre arriba */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* 4. LAS SECCIONES: Ocupan toda la pantalla (100vh) */
+.seccion {
+    height: 100vh; /* Altura total de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* VARIABLES DE COLORES */
+/* 5. COLORES: Para distinguir cada seccion */
+
+.color-1 { background-color: #fdfaf5; } /* Beige */
+.color-2 { background-color: #e9edc9; } /* Verde claro */
+.color-3 { background-color: #faedcd; } /* Arena */
+.color-4 { background-color: #d4a373; } /* Marrón suave */
+
+
+/* LO VAMOS A VER MAS ADELANTE */
+/* 6. PROYECTOS: Usamos Flexbox para alinear las tarjetas */
+.contenedor-proyectos {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #333; /* Para que vean el borde (Parte de Box Model) */
 }
