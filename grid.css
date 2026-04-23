@@ -1,0 +1,56 @@
+.dashboard-container {
+  display: grid; /* 1. Activamos la cuadrícula */
+  height: 100vh; /* 2. Altura total de la pantalla */
+  gap: 10px; 
+
+  /* 4. MEDIDAS: Primero el espacio flexible (1fr) y después el fijo (250px) */
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 80px 1fr 60px;
+
+  /* 5. EL MAPA: Dibujamos el layout con palabras */
+  grid-template-areas:
+    "header  header"
+    "main    sidebar"
+    "footer  footer";
+}
+
+/* 6. ASIGNACIÓN: Le decimos a cada etiqueta qué nombre tiene en el mapa */
+.header {
+  grid-area: header;
+  background: #2c3e50;
+  color: white;
+}
+.sidebar {
+  grid-area: sidebar;
+  background: #34495e;
+  color: white;
+}
+.main-content {
+  grid-area: main;
+  background: #34495e;
+  color: white;
+}
+.footer {
+  grid-area: footer;
+  background: #bdc3c7;
+}
+
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+
+.card{
+
+    height: 8rem;
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}

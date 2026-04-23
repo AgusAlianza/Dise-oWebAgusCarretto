@@ -1,0 +1,26 @@
+#section1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+ 
+}
+
+
+#div1 {
+display: block;    
+height: fit-content;
+background-color: blue;
+align-content: center;
+
+}
+
+#div2 {
+  background-color: rgb(167, 194, 14);
+}
+
+#div3 {
+    
+  background-color: rgb(10, 190, 130);
+}
